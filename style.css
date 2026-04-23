@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('bg.jpg');
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-agree,
+.btn {
+    width: 400px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.retry-btn {
+    background-color: blue;
+    color: #fff;
+    margin-top: 10px;
+    display: none;
+}
+
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input {
+        text-align: center;
+    }
+}
+
+.btn-agree {
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    background-color: orangered;
+    color: #fff;
+}
