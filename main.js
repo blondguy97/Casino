@@ -13,10 +13,15 @@ let cost = 0;
 
 generateSums()
 
+button.disabled = true;
+
 buttonAgree.addEventListener('click', function (e) {
     const sumByUser = input.value.trim();
     input.value = '';
     cost = Number(sumByUser);
+
+    button.disabled = false;
+
 
     if (isNaN(cost) || cost <= 0) {
         winOrLose.innerHTML = `<b style='color: red'>Введите число или число выше нуля!</b>`;
@@ -85,7 +90,6 @@ button.addEventListener('click', function (e) {
 
 buttonRetry.addEventListener('click', function (e) {
     winOrLose.innerHTML = ``;
-    button.disabled = false;
     buttonAgree.disabled = false;
     input.disabled = false;
 
